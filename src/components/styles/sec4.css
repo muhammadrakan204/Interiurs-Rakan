@@ -1,0 +1,233 @@
+#sec4 {
+    height: 100%;
+    width: 100%;
+    padding: 1.2rem 1.8rem;
+    padding-bottom: 3rem;
+    background-color: var(--white-color);
+    text-transform: capitalize;
+}
+
+.container-sec4 .left-sec4 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8rem;
+}
+
+.container-sec4 .title-sec4 {
+    font-family: wanoRegular;
+    font-size: 4.4rem;
+    letter-spacing: 2px;
+    color: var(--text-color);
+    text-transform: capitalize;
+}
+
+.container-sec4 .desc-sec4 {
+    font-family: '';
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.container-sec4 .left-sec4 .container-img-left .img-left {
+    position: absolute;
+    object-fit: cover;
+    transition: .4s ease-out;
+    width: 100%;
+    height: 100%;
+}
+
+.container-sec4 .left-sec4 .container-img-left:hover .img-left{
+    transform: scale(1.1);
+    object-fit: cover;
+}
+
+.container-sec4 .sofa {
+    margin-top: 20px;
+}
+
+.container-sec4 .left-sec4 .container-img-left {
+    width: 501px;
+    height: 255px;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+    border: var(--border-img);
+}
+
+
+.container-sec4 .text-left {
+    position: relative;
+    top: 40px;
+}
+
+.container-sec4 .right-sec4 {
+    display: flex;
+    justify-content: center;
+    gap: 7.8rem;
+    margin-top: 4.7rem;
+    text-align: right;
+}
+
+.container-sec4 .container-img-stairs {
+    width: 214px;
+    height: 398px;
+    position: relative;
+    border-radius: var(--border-radius);
+    border: var(--border-img);
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.container-sec4 .container-img-stairs .img-stairs {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    bottom: 0;
+    left: 0;
+    transition: .4s ease-out;
+}
+
+.container-sec4 .container-img-stairs .img-stairs:hover {
+    transform: scale(1.1);
+}
+
+.container-sec4 .text-stairs {
+    margin-top: 7rem;
+}
+
+.container-sec4 .bathroom {
+    margin-top: 4rem;
+}
+
+.button-sec4 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.container-sec4 button {
+    background-color: var(--green-color);
+    border: none;
+    color: var(--text-color);
+    padding: .7rem 2rem;
+    font-size: .85rem;
+    font-family: poppins;
+    border-radius: 25px;
+    cursor: none;
+}
+
+.button-sec4 i {
+    transition: .5s;
+    margin-left: 2px;
+}
+
+.button-sec4 button:hover i {
+    transform: scale(1.4);
+    transform: translateX(5px);
+}
+
+@media (max-width: 558px) {
+    .container-sec4 .left-sec4 .container-img-left {
+        width: 301px;
+        height: 155px;
+    }
+
+    .container-sec4 .right-sec4 .container-img-stairs {
+        height: 301px;
+        width: 155px;
+    }
+
+    .container-sec4 .right-sec4 {
+        margin-top: 5.8rem;
+    }
+
+    #sec4 .container-sec4 .right-sec4 .title-sec4 {
+        font-size: 2.6rem;
+    }
+
+    #sec4 .container-sec4 .title-sec4 {
+        font-size: 3rem;
+    }
+
+   .container-sec4 .desc-sec4 {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+        margin-top: .6rem;
+    }
+
+    #sec4 .container-sec4 .bathroom .title-sec4 {
+        font-size: 2.6rem;
+    }
+}
+
+
+
+@media (max-width: 778px) {
+    .container-sec4 .left-sec4 {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container-sec4 .left-sec4 .container-img-left .img-left {
+        left: 0;
+    }
+
+    .container-sec4 .title-sec4 {
+        font-size: 6rem;
+    }
+
+    .container-sec4 .desc-sec4 {
+        margin-bottom: 2rem;
+    }
+
+    .container-sec4 .right-sec4 {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container-sec4 .text-stairs {
+        order: 1;
+        margin-top: 2rem;
+    }
+}
+
+
+@media (min-width: 1920px) {
+    .container-sec4 .title-sec4 {
+        font-family: wanoRegular;
+        font-size: 5.9rem;
+    }
+    
+    .container-sec4 .left-sec4 .container-img-left {
+        width: 621px;
+        height: 305px;
+    }
+
+    .container-sec4 .container-img-stairs {
+        width: 264px;
+        height: 448px;
+    }
+
+    .container-sec4 .text-left {
+        position: relative;
+        top: 60px;
+    }
+    
+    .container-sec4 .desc-sec4 {
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: var(--text-color);
+    }
+}

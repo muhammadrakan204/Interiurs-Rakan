@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+:root {
+  --blue-color : #454D66;
+  --green-color : #B1C387;
+  --white-color : #FFF8EA;
+  --text-color : #3F3F3F;
+  --border-radius : 200px;
+  --border-img : 3.5px solid #B1C387;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::-moz-selection { /* Code for Firefox */
+  color: var(--green-color);
+  background: var(--text-color);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+::selection {
+  color: var(--green-color);
+  background: var(--text-color);
 }
 
-.App-link {
-  color: #61dafb;
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+body::-webkit-scrollbar{
+  display: none;
+}
+
+
+@font-face {
+  font-family: wanoSemibold;
+  src: url(../public/fonts/WanoQuin-SemiBold.otf);
+}
+
+@font-face {
+  font-family: wanoMedium;
+  src: url(../public/fonts/WanoQuin-Medium.otf);
+}
+
+@font-face {
+  font-family: wanoRegular;
+  src: url(../public/fonts/WanoQuin-Regular.otf);
+}
+
+@font-face {
+  font-family: abigral;
+  src: url(../public/fonts/Abigral.otf);
+}
+
+@font-face {
+  font-family: wanoBold;
+  src: url(../public/fonts/WanoQuin-Bold.otf);
 }

@@ -1,0 +1,155 @@
+#discount {
+    width: 100%;
+    height: 100%;
+    padding-top: 4rem;
+    background-color: var(--green-color);
+    padding-top: 8rem;
+}
+
+.container-discount {
+    width: 90%;
+    height: 450px;
+    background-color: #FFF8EA;
+    display: flex;
+    gap: 20px;
+    margin: 0px auto;
+    padding: .7rem;
+}
+
+.container-discount .img-discount {
+    width: 100%;
+    height: 100%;
+    border: 3px solid var(--green-color);
+    position: relative;
+}
+
+.container-discount .img-discount::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--green-color);
+    position: absolute;
+    bottom: 0;
+    z-index: 999;
+    opacity: .5;
+}
+
+.container-discount .img-discount::after {
+    content: 'GET 10%';
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 25%;
+    z-index: 1000;
+    font-family: 'wanoSemibold';
+    font-size: 10.4rem;
+    color: var(--text-color);
+    transition: .5s;
+    opacity: 1;
+}
+
+.img-discount img {
+    width: 100%;
+    height: 100%;
+}
+
+.container-discount .card-discount {
+    width: 100%;
+    height: 100%;
+}
+
+.container-discount .card-discount .title-discount{
+    font-family: '';
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.container-discount form {
+    margin-top: 5.5rem;
+}
+
+.container-discount form  p {
+    margin-bottom: .6rem;
+    color: var(--text-color);
+    font-family: '';
+    font-weight: 500;
+}
+
+.container-discount form input {
+    width: 80%;
+    border: none;
+    border-bottom: 1.5px solid var(--text-color);
+    background-color: var(--white-color);
+    color: var(--text-color);
+    padding-bottom: 5x;
+}
+
+input:focus {
+    outline:none;
+}
+
+.container-discount .card-discount .name-input {
+    margin-bottom: 2rem;
+}
+
+#discount .container-discount .card-discount .button-discount {
+    background-color: var(--green-color);
+    border: none;
+    color: var(--text-color);
+    padding: .58rem 2rem;
+    font-size: .85rem;
+    font-family: poppins;
+    border-radius: 25px;
+    cursor: none;
+    margin-top: 4rem;
+}
+
+.card-discount .button-discount i {
+    transition: .5s;
+}
+
+.card-discount .button-discount:hover i {
+    transform: scale(1.4);
+    transform: translateX(5px);
+}
+
+@media (max-width: 558px) {
+    .container-discount .img-discount::before {
+        opacity: .2;
+    }
+
+    .container-discount .card-discount .title-discount {
+        font-size: 1rem;
+        letter-spacing: .7px;
+    }
+
+    form p {
+        font-size: .87rem;
+    }
+}
+
+@media (max-width: 778px) {
+    #discount {
+        padding-top: 5rem;
+    }
+    
+    .container-discount {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    
+    .container-discount form {
+        margin-top: 2rem;
+    }
+    
+    #discount .container-discount .card-discount .button-discount {
+        margin-top: 2rem;
+    }
+    
+    .container-discount .img-discount::after {
+        display: none;
+    }
+}

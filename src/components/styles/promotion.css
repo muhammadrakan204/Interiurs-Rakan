@@ -1,0 +1,20 @@
+#promotion {
+    background-color: var(--green-color);
+    padding: 10px 0px;
+}
+
+#promotion marquee {
+    font-family: "wanoSemibold";
+    color: #FFF8EA;
+    font-size: 4.7rem;
+    text-align: center;
+    border-top: 3px solid #FFF8EA;
+    border-bottom: 3px solid #FFF8EA;
+    padding: 1rem 0px;
+}
+
+@media (max-width: 558px) {
+    #promotion marquee {
+        font-size: 3.6rem;
+    }
+}

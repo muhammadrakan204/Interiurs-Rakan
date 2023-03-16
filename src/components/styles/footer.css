@@ -1,0 +1,51 @@
+footer {
+    background-color: var(--green-color);
+    padding: 0px 1rem;
+    padding-top: 3.4rem;
+    padding-bottom: 2rem;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    flex-wrap: wrap;
+    color: var(--white-color);
+}
+
+.title-footer i {
+    margin-right: .3rem;
+}
+
+.container-footer ul li {
+    list-style: none;
+}
+
+.container-footer ul li a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+footer h1 {
+    font-family: 'wanoSemibold';
+    margin-bottom: .8rem;
+    font-size: 2.4rem;
+}
+
+.container-footer .desc-foot {
+    font-family: 'quicksand';
+    font-size: .8rem;
+}
+
+@media (max-width: 778px) {
+    .container-footer {
+        gap: 2rem;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 360px) {
+    .container-footer .links-footer {
+        margin-left: -2rem;
+    }
+}

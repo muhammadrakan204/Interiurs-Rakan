@@ -1,0 +1,92 @@
+.container-about {
+    width: 100%;
+    height: 100%;
+    background-color: var(--white-color);
+}
+
+.header-about {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+}
+
+.title-about {
+    font-family: wanoMedium;
+    text-align: center;
+    padding-top: 6rem;
+    font-size: 12rem;
+    z-index: 2;
+    position: relative;
+}
+
+.title-about a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+
+.img-header-kiri {
+    width: 605px;
+    height: 760px;
+    position: absolute;
+    bottom: 30px;
+    left: -15px;
+    z-index: 1;
+    border: 5px solid var(--green-color);
+    border-radius: 20px;
+}
+
+.img-header-kanan {
+    width: 555px;
+    height: 410px;
+    position: absolute;
+    bottom: 150px;
+    right: -20px;
+    z-index: 1;
+    border: 5px solid var(--green-color);
+    border-radius: 20px;
+}
+
+.body-cursor {
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    left: 10px;
+    z-index: 99999;
+    transition: width 0.5s, height 0.5s;
+}
+
+.child-cursor {
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    transform: translate(80%);
+    left: 10px;
+    top: 10px;
+    z-index: 99999;
+    transition: width 1.5s, height 1.5s;
+    animation: cursorAnim 5s infinite ease-in-out;
+}
+
+.body-cursor.grow {
+    width: 450px;
+    height: 450px;
+    transition: width 0.5s, height 0.5s;
+}
+
+@keyframes cursorAnim {
+    0% {transform: translate(10%);}
+    50% {transform: translate(80%);}
+    100% {transform: translate(10%);}
+}
+
+

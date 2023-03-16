@@ -1,0 +1,50 @@
+#big-text {
+    height: 100%;
+    width: 100%;
+    padding: 3.2rem;
+    background-color: var(--green-color);
+}
+
+#big-text p {
+    text-align: center;
+    font-size: 15rem;
+    font-family: wanoMedium;
+    color: var(--text-color);
+    line-height: 230px;
+    text-transform: capitalize;
+}
+
+#big-text span {
+    display: block;
+}
+
+
+@media (max-width: 590px) {
+    #big-text p {
+        font-size: 20px;
+    }
+}
+ 
+@media (max-width: 888px) {
+    #big-text p {
+        font-size: 4.5rem;
+        line-height: 80px;
+        font-family: wanoSemibold;
+    }
+
+    #big-text {
+        padding: 1.3rem;
+    }
+
+}
+
+@media (min-width: 1920px) {
+    #big-text {
+        padding: 3.8rem;
+    }
+
+    #big-text p {
+        font-size: 22rem;
+        line-height: 18rem;
+    }
+}

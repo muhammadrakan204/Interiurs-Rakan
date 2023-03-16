@@ -1,0 +1,92 @@
+.container-work {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-top: 7.5rem;
+    padding: 3rem 0;
+}
+
+.image-work-wrapper {
+    width: 477px;
+    height: 431px;
+    position: relative;
+    border: 5px solid var(--green-color);
+    border-radius: 20px;
+    margin-left: 2rem;
+}
+
+.image-work-wrapper img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.form-work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-work .title {
+    font-family: 'wanoMedium';
+    font-size: 6rem;
+    color: var(--text-color);
+    width: 60%;
+    text-align: center;
+    line-height: 90px;
+}
+
+.form-work .desc {
+    text-align: center;
+    font-family: serif;
+    width: 60%;
+    color: var(--text-color);
+    margin-top: 2rem;
+    font-size: 1.4rem;
+}
+
+.form-work form {
+    margin-top: 3.7rem;
+}
+
+.form-work p {
+    font-family: serif;
+    color: var(--text-color);
+}
+
+.form-work input {
+    border: none;
+    border-bottom: 1.5px solid var(--text-color);
+    width: 450px;
+    font-size: 1rem;
+    margin-top: 1rem;
+    background-color: transparent;
+    color: var(--text-color);
+}
+
+input:focus {
+    outline:none;
+}
+
+.form-work button {
+    background-color: var(--green-color);
+    border: none;
+    color: var(--text-color);
+    padding: .58rem 2rem;
+    font-size: .85rem;
+    font-family: poppins;
+    border-radius: 25px;
+    cursor: none;
+    margin-top: 1rem;
+}
+
+.form-work i {
+    font-size: .85rem;
+}
+
+.card-discount .button-discount:hover i {
+    transform: scale(1.4);
+    transform: translateX(5px);
+}
+

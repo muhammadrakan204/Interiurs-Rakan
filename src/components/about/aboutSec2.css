@@ -1,0 +1,31 @@
+.rakan-xaleena {
+    width: 900px;
+    margin-top: 3rem;
+    margin-left: -1.5rem;
+    border: 5px solid var(--green-color);
+    border-radius: 20px;
+}
+
+.about-sec2 {
+    display: flex;
+    padding: 4.7rem 3rem;
+    gap: 1rem;
+}
+
+.about-sec2 .title {
+    font-size: 6rem;
+    font-family: 'wanoMedium';
+    color: var(--text-color);
+    line-height: 80px;
+    letter-spacing: 2px;
+    margin-right: -3rem;
+}
+
+.about-sec2 .desc {
+    font-family: serif;
+    font-size: 1.3rem;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    width: 70%;
+    font-weight: lighter;
+}

@@ -1,0 +1,33 @@
+.container-shop {
+    width: 100%;
+    height: 100%;
+    background-color: var(--white-color);
+}
+
+.container-shop .title-shop {
+    width: 88%;
+    margin: 0px auto;
+    padding-top: 7rem;
+    text-align: center;
+    font-family: 'wanoRegular';
+    font-size: 6rem;
+    color: var(--text-color);
+    line-height: 6.1rem;
+}
+
+.link-wrapper {
+    margin-top: 3.5rem;
+    text-align: center;
+}
+
+.container-shop a{
+    margin: 0px auto;
+    color: var(--text-color);
+    text-decoration: none;
+    font-family: 'wanoBold';
+    font-size: 1.7rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+
