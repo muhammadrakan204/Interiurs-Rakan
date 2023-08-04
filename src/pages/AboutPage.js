@@ -1,10 +1,11 @@
-import Navbar from "../components/home/Navbar";
+import NavbarAll from "../components/NavbarAll";
 import HeaderAbout from "../components/about/HeaderAbout";
 import AboutSec1 from "../components/about/AboutSec1";
 import AboutSec2 from "../components/about/AboutSec2";
 import Team from "../components/about/Team";
 import AboutSec3 from "../components/about/AboutSec3";
 import WorkWithUs from "../components/about/WorkWithUs";
+import Footer from "../components/home/Footer";
 
 import { useEffect } from "react";
 
@@ -46,13 +47,14 @@ const AboutPage = () => {
   });
   return (
     <div className="container-about">
-      <Navbar />
+      <NavbarAll />
       <HeaderAbout />
       <AboutSec1 />
       <AboutSec2 />
       <Team />
       <AboutSec3 />
       <WorkWithUs />
+      <Footer />
     </div>
   );
 };

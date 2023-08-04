@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "./navbar.css";
+import "./home/navbar.css";
 
-const Navbar = ({ hamburgerIcon, setHamburgerIcon }) => {
+const NavbarAll = () => {
   const [toggle, setToggle] = useState("container-navbar");
 
   return (
@@ -35,7 +35,7 @@ const Navbar = ({ hamburgerIcon, setHamburgerIcon }) => {
         </div>
       </nav>
       <i
-        className={hamburgerIcon}
+        className="fa-solid fa-bars hamburger"
         onClick={() =>
           toggle === "container-navbar"
             ? setToggle("container-navbar full")
@@ -46,4 +46,4 @@ const Navbar = ({ hamburgerIcon, setHamburgerIcon }) => {
   );
 };
 
-export default Navbar;
+export default NavbarAll;

@@ -29,3 +29,47 @@
     width: 70%;
     font-weight: lighter;
 }
+
+@media (max-width: 824px) {
+    .about-sec2 {
+        gap: 2rem;
+    }
+
+    .about-sec2 .title {
+        font-size: 4rem;
+        line-height: 60px;
+        padding-right: 1rem;
+    }
+
+    .about-sec2 .desc {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 487px) {
+    .about-sec2 {
+        justify-content: center;
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+        padding: 0;
+        margin-top: 4rem;
+    }
+
+    .about-sec2 .title {
+        font-size: 3.8rem;
+        width: 100%;
+        line-height: 60px;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .about-sec2 .desc {
+        padding: 0 1.4rem;
+    }
+
+    .rakan-xaleena {
+        width: 110%;
+    }
+}

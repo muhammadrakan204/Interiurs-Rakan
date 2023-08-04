@@ -1,16 +1,7 @@
-import NavbarAll from "../components/NavbarAll";
-import Header from "../components/home/Header";
-import BigText from "../components/home/BigText";
-import Sec3 from "../components/home/Sec3";
-import Sec4 from "../components/home/Sec4";
-import Map from "../components/home/Map";
-import Promotion from "../components/home/Promotion";
-import Discount from "../components/home/Discount";
-import Footer from "../components/home/Footer";
-
+import Login from "../components/login/Login";
 import { useEffect } from "react";
 
-const HomePage = () => {
+const LoginPage = () => {
   useEffect(() => {
     const bCursor = document.querySelector(".body-cursor");
     const cCursor = document.querySelector(".child-cursor");
@@ -46,20 +37,11 @@ const HomePage = () => {
       });
     }
   });
-
   return (
     <>
-      <NavbarAll />
-      <Header />
-      <BigText />
-      <Sec3 />
-      <Sec4 />
-      <Map />
-      <Promotion />
-      <Discount />
-      <Footer />
+      <Login />
     </>
   );
 };
 
-export default HomePage;
+export default LoginPage;

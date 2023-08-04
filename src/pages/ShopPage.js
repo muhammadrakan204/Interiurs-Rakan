@@ -1,7 +1,7 @@
 import Header from "../components/shop/Header";
 import ListProducts from "../components/shop/Products";
 import Footer from "../components/home/Footer";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const Shop = () => {
   useEffect(() => {
@@ -39,11 +39,16 @@ const Shop = () => {
       });
     }
   });
+
+  const [openCart, setOpenCart] = useState("container-cart");
+
   return (
     <div id="shop">
-      <i className="fa-solid fa-cart-shopping"></i>
+      <a href="/signup">
+        <button className="signup-button">Sign Up</button>
+      </a>
       <Header />
-      <ListProducts />
+      <ListProducts openCart={openCart} setOpenCart={setOpenCart} />
       <Footer />
     </div>
   );

@@ -90,3 +90,34 @@ input:focus {
     transform: translateX(5px);
 }
 
+
+@media (max-width: 820px) {
+    .form-work input {
+        width: 350px;
+    }
+}
+
+@media (max-width: 487px) {
+    .container-work {
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+    
+    .image-work-wrapper {
+        display: none;   
+    }
+
+    .container-work .title {
+        font-size: 4rem;
+        line-height: 57px;
+    }
+
+    .container-work .desc {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .form-work input {
+        width: 250px;
+    }
+}

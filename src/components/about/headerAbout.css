@@ -89,4 +89,62 @@
     100% {transform: translate(10%);}
 }
 
+@media (min-width: 1920px) {
+    .header-about .title-about {
+        font-size: 18rem;
+    }
+    
+    .img-header-kiri {
+        width: 705px;
+        height: 860px;
+        position: absolute;
+        bottom: 0;
+        left: -15px;
+        z-index: 1;
+        border: 5px solid var(--green-color);
+        border-radius: 20px;
+    }
+}
 
+@media (max-width: 824px) {
+    .img-header-kiri {
+        width: 375px;
+        height: 597px;
+    }
+
+    .img-header-kanan {
+        width: 405px;
+        height: 330px;
+        background-size: cover;
+    }
+}
+
+
+@media (max-width: 487px) {
+
+    .header-about {
+        height: 787px;
+    }
+
+    .title-about {
+        font-size: 6.8rem;
+        padding-top: 8rem;
+    }
+
+    
+    .img-header-kiri {
+        width: 265px;
+        height: 390px;
+        position: absolute;
+        bottom: 30px;
+        left: -15px;
+        z-index: 1;
+        border: 5px solid var(--green-color);
+        border-radius: 20px;
+    }
+
+    .img-header-kanan {
+        display: none;
+    }
+
+}

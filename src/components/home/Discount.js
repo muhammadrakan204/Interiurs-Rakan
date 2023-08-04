@@ -1,4 +1,4 @@
-import "../styles/discount.css";
+import "./discount.css";
 
 const Discount = () => {
   return (

@@ -64,8 +64,8 @@ body.scroll {
 }
 
 
-.hamburger.merah {
-    color: red;
+.hamburger.ham-close {
+    display: none;
 }
 
 .container-navbar ul li a:hover {

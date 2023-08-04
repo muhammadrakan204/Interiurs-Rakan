@@ -43,3 +43,39 @@
     color: var(--text-color);
     margin-top: .1rem;
 }
+
+@media (max-width: 824px) {
+    .image-slider-wrapper {
+        width: 288px;
+        height: 470px;
+        border: 5px solid var(--white-color);
+        border-radius: 20px;
+        position: relative;
+        margin-top: 3rem;
+    }
+
+    .container-team .name {
+        width: 500px;
+        height: 100%;
+    }
+
+    .container-team .job {
+        width: 500px;
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 487px) {
+    .title-team {
+        font-size: 3rem;
+    }
+
+    .image-slider-wrapper {
+        width: 228px;
+        height: 370px;
+        border: 5px solid var(--white-color);
+        border-radius: 20px;
+        position: relative;
+        margin-top: 3rem;
+    }
+}

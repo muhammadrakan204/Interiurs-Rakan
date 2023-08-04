@@ -1,4 +1,4 @@
-import "../styles/promotion.css";
+import "./promotion.css";
 
 const Promotion = () => {
   return (

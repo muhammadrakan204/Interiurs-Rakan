@@ -7,12 +7,12 @@ const Team = () => {
     <div className="container-team">
       <p className="title-team">OUR TEAM</p>
       <Swiper
-        spaceBetween={260}
+        spaceBetween={220}
         slidesPerView={3}
         onSwiper={(swiper) => console.log(swiper)}
         className="paren"
       >
-        <SwiperSlide>
+        <SwiperSlide className="anjas">
           <div className="image-slider-wrapper">
             <img
               src="./images/orang1.webp"
@@ -31,7 +31,7 @@ const Team = () => {
               className="image-slider"
             />
           </div>
-          <p className="name">Ahmad Thanos</p>
+          <p className="name">Ahmad udin</p>
           <p className="job">Technical Design Manager</p>
         </SwiperSlide>
         <SwiperSlide>
