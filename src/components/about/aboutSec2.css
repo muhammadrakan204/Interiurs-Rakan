@@ -73,3 +73,29 @@
         width: 110%;
     }
 }
+
+@media (min-width: 1920px) {
+    .rakan-xaleena {
+        width: 1000px;
+        margin-top: 3rem;
+        margin-left: -1.5rem;
+        border: 5px solid var(--green-color);
+        border-radius: 20px;
+    }
+    
+    .about-sec2 .title {
+        font-size: 7rem;
+        letter-spacing: 5px;
+        line-height: 90px;
+        padding-right: 1rem;
+    }
+
+    .about-sec2 .desc {
+        font-family: serif;
+        font-size: 1.7rem;
+        color: var(--text-color);
+        margin-bottom: 2rem;
+        width: 70%;
+        font-weight: lighter;
+    }
+}

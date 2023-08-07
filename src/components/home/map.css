@@ -3,7 +3,7 @@
     height: 100%;
     padding: 0px 1.4rem;
     padding-top: 3rem;
-    padding-bottom: 8rem;
+    padding-bottom: 4rem;
     background-color: var(--green-color);
 }
 
@@ -23,8 +23,8 @@
     height: 100%;
 }
 
-.countries-wrapper h1 {
-    font-family: 'wanoSemibold';
+.countries-wrapper .title {
+    font-family: 'wanoMedium';
     font-size: 5rem;
     color: var(--text-color);
     text-align: center;
@@ -65,7 +65,7 @@
         height: 100%;
     }
 
-    .countries-wrapper h1 {
+    .countries-wrapper .title {
         font-size: 3rem;
         line-height: 48px;
     }
@@ -82,11 +82,26 @@
 }
 
 @media (min-width: 1920px) {
+    #map {
+        padding-bottom: 4rem;
+    }
+    
     .countries p {
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
 
     .countries span {
-        font-size: .9rem;
+        font-size: 1.3rem;
+    }
+
+    .container-map .img-map img {
+        width: 750px;
+        height: 100%;
+    }
+
+    .countries-wrapper .title {
+        font-size: 7rem;
+        letter-spacing: 6px;
+        line-height: 100px;
     }
 }

@@ -93,4 +93,9 @@ body.scroll {
         margin-right: 2.4rem;
         margin-top: 1rem;
     }   
+
+    .container-navbar ul li a {
+        font-size: 10rem;
+        padding: 0px 15px;
+    }
 }

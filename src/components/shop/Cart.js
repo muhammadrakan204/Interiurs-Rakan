@@ -2,17 +2,6 @@ import { useState } from "react";
 import "./cart.css";
 
 const Cart = ({ openCart, cart, setCart, totalPrice }) => {
-  const [qty, setQty] = useState(1);
-
-  console.log(cart);
-
-  const plusQty = (item) => {
-    let anjas = cart.find((ct) => ct.id === item.id);
-    let tambah = anjas.qty++;
-    setCart((cart[item].qty = tambah));
-    console.log(tambah);
-  };
-
   return (
     <>
       <div className={openCart}>
@@ -29,9 +18,7 @@ const Cart = ({ openCart, cart, setCart, totalPrice }) => {
                     <p className="name-item">{item.name}</p>
                     <p className="price-item">${item.price}</p>
                     <div className="qty-wrapper">
-                      <p className="plus" onClick={() => plusQty(item)}>
-                        +
-                      </p>
+                      <p className="plus">+</p>
                       <p className="qty">{item.qty}</p>
                       <p className="minus">-</p>
                     </div>

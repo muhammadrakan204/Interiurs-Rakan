@@ -8,7 +8,7 @@ const Map = () => {
           <img src="./images/map.png" alt="" />
         </div>
         <div className="countries-wrapper">
-          <h1>Trusted by Many Countries</h1>
+          <p className="title">Trusted by Many Countries</p>
           <div className="countries">
             <p className="border">
               Europe <br />

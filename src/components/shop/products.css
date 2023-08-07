@@ -210,3 +210,18 @@
         font-size: 1.6rem;
     }
 }
+
+@media (min-width: 1900px) {
+    .container-shop .title-shop {
+        font-size: 7rem;
+        letter-spacing: 5px;
+    }
+
+    .title-product {
+        font-size: 2rem;
+    }
+
+    .price-product {
+        font-size: 1.3rem;
+    }
+}

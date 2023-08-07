@@ -59,3 +59,16 @@
         line-height: 60px;
     }
 }
+
+@media (min-width: 1920px) {
+    .about-sec1 .title {
+        font-size: 7rem;
+        line-height: 100px;
+        letter-spacing: 6px;
+        color: var(--text-color);
+    }
+
+    .about-sec1 .desc {
+        font-size: 1.7rem;
+    }
+}

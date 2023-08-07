@@ -121,3 +121,30 @@ input:focus {
         width: 250px;
     }
 }
+
+@media (min-width: 1920px) {
+    .form-work .title {
+        font-size: 8rem;
+        color: var(--text-color);
+        width: 60%;
+        text-align: center;
+        line-height: 107px;
+        letter-spacing: 2.5px;
+    }
+
+    .form-work .desc {
+        font-size: 1.7rem;
+    }
+    
+    .form-work input {
+        width: 540px;
+        font-size: 1.4rem;
+    }
+
+    .form-work button {
+        padding: .70rem 2.5rem;
+        font-size: .85rem;
+        font-size: 1.1rem;
+    }
+    
+}

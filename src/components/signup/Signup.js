@@ -1,6 +1,45 @@
+import { useState } from "react";
 import "./signup.css";
 
 const Signup = () => {
+  const [username, setUsername] = useState();
+  const [email, setEmail] = useState();
+  const [password, setPassword] = useState();
+  const [confirmPw, setConfirmPw] = useState();
+
+  const handleFullName = (e) => {
+    setUsername(e.target.value);
+  };
+
+  const handleEmail = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handlePassword = (e) => {
+    setPassword(e.target.value);
+  };
+
+  const handleConfirmPw = (e) => {
+    setConfirmPw(e.target.value);
+  };
+
+  const handleSubmit = () => {
+    if (
+      username === localStorage.getItem("username") ||
+      email === localStorage.getItem("email")
+    ) {
+      alert("Username or email already registered");
+      return false;
+    } else if (password != confirmPw) {
+      alert("Password don't match");
+      return false;
+    } else {
+      localStorage.setItem("username", username);
+      localStorage.setItem("email", email);
+      localStorage.setItem("password", password);
+    }
+  };
+
   return (
     <>
       <div className="container-signup">
@@ -11,17 +50,17 @@ const Signup = () => {
             </a>
             <h1>Hello!</h1>
             <p className="desc-signup">Please signup here</p>
-            <div className="form-signup">
+            <form className="form-signup" onSubmit={handleSubmit}>
               <p>Full Name</p>
-              <input type="text" />
+              <input type="text" onChange={handleFullName} />
               <p>Email Address</p>
-              <input type="text" />
+              <input type="text" onChange={handleEmail} />
               <p>Password</p>
-              <input type="password" />
+              <input type="password" onChange={handlePassword} />
               <p>Confirm Password</p>
-              <input type="password" />
-            </div>
-            <button>Sign Up</button>
+              <input type="password" onChange={handleConfirmPw} />
+              <button>Sign Up</button>
+            </form>
           </div>
           <div className="kanan-signup">
             <p className="title-kanan-signup">Interiurs</p>

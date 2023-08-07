@@ -106,7 +106,6 @@
 }
 
 .kanan-signup p {
-    /* font-family: ''; */
     color: var(--text-color);
     margin-top: -.8rem;
 }
@@ -223,5 +222,25 @@
         margin-top: 1rem;
         background-color: var(--white-color);
         color: var(--text-color);
+    }
+}
+
+@media (min-width: 1920px) {
+    .container-signup .kiri-signup h1 {
+        font-size: 4.5rem;
+        letter-spacing: 3px;
+    }
+
+    .desc-signup {
+        margin-top: -.7rem;
+    }
+
+    .kiri-signup .fa-chevron-left {
+        font-size: 1.3rem;
+    }
+
+    .form-signup p {
+        font-size: 1.3rem;
+        font-weight: 400;
     }
 }

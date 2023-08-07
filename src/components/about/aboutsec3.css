@@ -90,3 +90,19 @@
         font-size: 3.8rem;
     }
 }
+
+@media (min-width: 1920px) {
+    .container-about-sec3 {
+        padding-top: 4rem;
+    }
+
+    .text-about-sec3 .title {
+        font-size: 7rem;
+        line-height: 100px;
+        letter-spacing: 6px;
+    }
+
+    .text-about-sec3 .desc {
+        font-size: 1.7rem;
+    }
+}
