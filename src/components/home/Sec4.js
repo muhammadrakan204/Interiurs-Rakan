@@ -32,9 +32,11 @@ const Sec4 = () => {
           </div>
         </div>
         <div className="button-sec4">
-          <button>
-            View catalog <i className="fa-solid fa-arrow-right"></i>
-          </button>
+          <a href="/shop">
+            <button>
+              View catalog <i className="fa-solid fa-arrow-right"></i>
+            </button>
+          </a>
         </div>
       </div>
     </section>

@@ -22,8 +22,8 @@
 }
 
 .body-cursor {
-    width: 35px;
-    height: 35px;
+    width: 18px;
+    height: 18px;
     position: fixed;
     background-color: var(--white-color);
     border-radius: 50%;
@@ -36,8 +36,8 @@
 }
 
 .child-cursor {
-    width: 20px;
-    height: 20px;
+    width: 9px;
+    height: 9px;
     position: fixed;
     background-color: var(--white-color);
     border-radius: 50%;
@@ -50,7 +50,6 @@
     transition: width 1.5s, height 1.5s;
     animation: cursorAnim 5s infinite ease-in-out;
 }
-
 
 .container-signup .kiri-signup h1 {
     font-family: 'wanoMedium';

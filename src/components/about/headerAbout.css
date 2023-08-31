@@ -7,13 +7,13 @@
 .header-about {
     position: relative;
     width: 100%;
+    padding-top: 6rem;
     height: 1000px;
 }
 
 .title-about {
     font-family: wanoMedium;
     text-align: center;
-    padding-top: 6rem;
     font-size: 12rem;
     z-index: 2;
     position: relative;
@@ -48,8 +48,8 @@
 }
 
 .body-cursor {
-    width: 35px;
-    height: 35px;
+    width: 18px;
+    height: 18px;
     position: fixed;
     background-color: var(--white-color);
     border-radius: 50%;
@@ -62,8 +62,8 @@
 }
 
 .child-cursor {
-    width: 20px;
-    height: 20px;
+    width: 9px;
+    height: 9px;
     position: fixed;
     background-color: var(--white-color);
     border-radius: 50%;

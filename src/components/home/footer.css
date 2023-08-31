@@ -14,7 +14,8 @@ footer {
 }
 
 .title-footer i {
-    margin-right: .3rem;
+    margin-right: 1rem;
+    margin-bottom: 7px;
 }
 
 .container-footer ul li {
@@ -35,6 +36,10 @@ footer h1 {
 .container-footer .desc-foot {
     font-family: 'quicksand';
     font-size: .8rem;
+}
+
+.ig {
+    color: var(--white-color);
 }
 
 @media (max-width: 778px) {

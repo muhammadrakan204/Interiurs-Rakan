@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./signup.css";
+import { useNavigate } from "react-router-dom";
 
 const Signup = () => {
   const [username, setUsername] = useState();
@@ -23,20 +24,25 @@ const Signup = () => {
     setConfirmPw(e.target.value);
   };
 
-  const handleSubmit = () => {
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
     if (
       username === localStorage.getItem("username") ||
       email === localStorage.getItem("email")
     ) {
       alert("Username or email already registered");
+      e.preventDefault();
       return false;
     } else if (password != confirmPw) {
       alert("Password don't match");
+      e.preventDefault();
       return false;
     } else {
       localStorage.setItem("username", username);
       localStorage.setItem("email", email);
       localStorage.setItem("password", password);
+      navigate("/login");
     }
   };
 
@@ -52,13 +58,13 @@ const Signup = () => {
             <p className="desc-signup">Please signup here</p>
             <form className="form-signup" onSubmit={handleSubmit}>
               <p>Full Name</p>
-              <input type="text" onChange={handleFullName} />
+              <input type="text" onChange={handleFullName} required />
               <p>Email Address</p>
-              <input type="text" onChange={handleEmail} />
+              <input type="text" onChange={handleEmail} required />
               <p>Password</p>
-              <input type="password" onChange={handlePassword} />
+              <input type="password" onChange={handlePassword} required />
               <p>Confirm Password</p>
-              <input type="password" onChange={handleConfirmPw} />
+              <input type="password" onChange={handleConfirmPw} required />
               <button>Sign Up</button>
             </form>
           </div>

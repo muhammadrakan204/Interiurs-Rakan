@@ -17,8 +17,12 @@ const HeaderContact = () => {
             <p className="email-contact-desc">(+44) 1536 6222</p>
             <p className="email-contact">BERLIN OFFICE</p>
             <p className="email-contact-desc">(+49) 19288 092321</p>
-            <i class="fa-solid fa-chevron-right"></i>
-            <i class="fa-solid fa-chevron-right"></i>
+            <p className="email-contact">JAKARTA OFFICE</p>
+            <p className="email-contact-desc">(+68) 57300 12285</p>
+            <a href="https://www.instagram.com/m.rakann/">
+              <i class="fa-solid fa-chevron-right"></i>
+              <i class="fa-solid fa-chevron-right"></i>
+            </a>
           </div>
         </div>
         <div className="body-cursor"></div>

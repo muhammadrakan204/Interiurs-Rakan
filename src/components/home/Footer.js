@@ -6,9 +6,12 @@ const Footer = () => {
       <div className="container-footer">
         <div className="title-footer">
           <h1>INTERIURS</h1>
-          <i className="fa-brands fa-instagram"></i>
+          <a href="https://www.instagram.com/m.rakann/" className="ig">
+            <i className="fa-brands fa-instagram"></i>
+          </a>
           <i className="fa-brands fa-twitter"></i>
           <i className="fa-brands fa-tiktok"></i>
+          <p className="desc-foot">Created by Rakan</p>
         </div>
         <div className="location-footer">
           <h1>Location</h1>

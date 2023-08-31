@@ -1,7 +1,32 @@
 import { useState } from "react";
 import "./cart.css";
 
-const Cart = ({ openCart, cart, setCart, totalPrice }) => {
+const Cart = ({ openCart, cart, setCart, removeItem }) => {
+  // function untuk menambahkan kuantitas items
+  const addItem = (productId, newQty) => {
+    const updatedCartItems = cart.map((item) =>
+      item.id === productId ? { ...item, qty: newQty + 1 } : item
+    );
+    setCart(updatedCartItems);
+  };
+
+  // function untuk mengurangi kuantitas item
+  const reduceItem = (productId, newQty) => {
+    if (newQty !== 1) {
+      const updatedCartItems = cart.map((item) =>
+        item.id === productId ? { ...item, qty: newQty - 1 } : item
+      );
+      setCart(updatedCartItems);
+    }
+  };
+
+  //menghitung total harga semua items
+  const totalPrice = cart.reduce(
+    (acc, product) => acc + product.price * product.qty,
+    0
+  );
+  const formatPrice = new Intl.NumberFormat().format(totalPrice);
+
   return (
     <>
       <div className={openCart}>
@@ -16,13 +41,31 @@ const Cart = ({ openCart, cart, setCart, totalPrice }) => {
                   <img src={item.image} />
                   <div className="description-item">
                     <p className="name-item">{item.name}</p>
-                    <p className="price-item">${item.price}</p>
+                    <p className="price-item">
+                      $
+                      {new Intl.NumberFormat("en-US").format(
+                        item.price * item.qty
+                      )}
+                    </p>
                     <div className="qty-wrapper">
-                      <p className="plus">+</p>
+                      <p
+                        className="plus"
+                        onClick={() => addItem(item.id, item.qty)}
+                      >
+                        +
+                      </p>
                       <p className="qty">{item.qty}</p>
-                      <p className="minus">-</p>
+                      <p
+                        className="minus"
+                        onClick={() => reduceItem(item.id, item.qty)}
+                      >
+                        -
+                      </p>
                     </div>
-                    <i class="fa-solid fa-trash"></i>
+                    <i
+                      class="fa-solid fa-trash"
+                      onClick={() => removeItem(item.id)}
+                    ></i>
                   </div>
                 </div>
               ))
@@ -33,7 +76,7 @@ const Cart = ({ openCart, cart, setCart, totalPrice }) => {
             ) : (
               <div className="total">
                 <p className="totalPrice">
-                  Total : <span>${totalPrice}</span>
+                  Total : <span>${formatPrice}</span>
                 </p>
                 <button>
                   {" "}
