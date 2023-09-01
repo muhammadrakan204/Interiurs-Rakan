@@ -75,7 +75,7 @@ span i {
 .body-cursor {
     width: 18px;
     height: 18px;
-    position: absolute;
+    position: fixed;
     background-color: var(--white-color);
     border-radius: 50%;
     mix-blend-mode: difference;
@@ -89,7 +89,7 @@ span i {
 .child-cursor {
     width: 9px;
     height: 9px;
-    position: absolute;
+    position: fixed;
     background-color: var(--white-color);
     border-radius: 50%;
     mix-blend-mode: difference;
