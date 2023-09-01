@@ -4,6 +4,7 @@
     display: flex;
     margin-top: 7.5rem;
     padding: 3rem 0;
+    overflow: hidden;
 }
 
 .image-work-wrapper {
@@ -39,11 +40,12 @@
 
 .form-work .desc {
     text-align: center;
-    font-family: serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
     width: 60%;
     color: var(--text-color);
     margin-top: 2rem;
-    font-size: 1.4rem;
+    font-size: 1.14rem;
 }
 
 .form-work form {

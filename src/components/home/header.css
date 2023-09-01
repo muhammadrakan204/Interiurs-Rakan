@@ -40,13 +40,13 @@ header {
 }
 
 .tagline p {
-    font-family: "";
+    font-family: 'Raleway', serif;
     color: var(--text-color);
     /* font-weight: 500; */
     text-align: start;
     font-size: 1.8rem;
     margin-bottom: 5px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 2rem;
     margin-top: -2rem;
 }
@@ -60,6 +60,7 @@ header .tagline button {
     background-color: var(--green-color);
     color: var(--text-color);
     cursor: none;
+    font-family: 'Raleway', sans-serif;
 }
 
 span i {

@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
+    overflow: hidden;
 }
 
 .about-sec1 .title {
@@ -16,11 +17,11 @@
 }
 
 .about-sec1 .desc {
-    font-family: 'serif';
-    font-size: 1.3rem;
-    font-weight: lighter;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.13rem;
     color: var(--text-color);
     width: 70%;
+    font-weight: 300;
 }
 
 .about-sec1 span {

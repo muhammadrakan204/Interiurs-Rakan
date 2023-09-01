@@ -4,6 +4,7 @@
     height: 100%;
     padding: 2.6rem 0;
     padding-left: 3rem;
+    overflow: hidden;
 }
 
 .title-team {
@@ -33,15 +34,17 @@
 }
 
 .name {
-    font-family: serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1.4rem;
     margin-top: 1rem;
     color: var(--text-color);
+    font-weight: 600;
 }
 
 .job {
     color: var(--text-color);
     margin-top: .1rem;
+    font-family: 'Raleway', sans-serif;
 }
 
 @media (max-width: 824px) {

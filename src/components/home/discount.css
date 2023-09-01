@@ -59,7 +59,7 @@
 }
 
 .container-discount .card-discount .title-discount{
-    font-family: '';
+    font-family: 'Raleway', sans-serif;
     font-size: 1.8rem;
     letter-spacing: 1px;
     font-weight: 500;
@@ -73,7 +73,7 @@
 .container-discount form  p {
     margin-bottom: .6rem;
     color: var(--text-color);
-    font-family: '';
+    font-family: 'Raleway', sans-serif;
     font-weight: 500;
 }
 
@@ -104,6 +104,7 @@ input:focus {
     border-radius: 25px;
     cursor: none;
     margin-top: 4rem;
+    font-family: 'Raleway', sans-serif;
 }
 
 .card-discount .button-discount i {

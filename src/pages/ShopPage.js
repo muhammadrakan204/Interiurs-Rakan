@@ -1,4 +1,3 @@
-import Header from "../components/shop/Header";
 import ListProducts from "../components/shop/Products";
 import Footer from "../components/home/Footer";
 import { useEffect, useState } from "react";
@@ -81,7 +80,6 @@ const Shop = () => {
       <div onClick={handleLogout}>
         {dataLogin ? <ButtonLogout /> : <ButtonSignup />}
       </div>
-      <Header />
       <ListProducts openCart={openCart} setOpenCart={setOpenCart} />
       <Footer />
     </div>

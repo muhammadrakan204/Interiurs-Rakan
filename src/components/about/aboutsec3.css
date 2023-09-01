@@ -6,6 +6,7 @@
     padding-top: 6rem;
     gap: 6rem;
     position: relative;
+    overflow: hidden;
 }
 
 .container-about-sec3 .text-about-sec3 {
@@ -23,9 +24,9 @@
 }
 
 .text-about-sec3 .desc {
-    font-family: 'serif';
-    font-size: 1.3rem;
-    font-weight: lighter;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.18rem;
+    font-weight: 300;
     color: var(--text-color);
     margin-top: 3rem;
     width: 70%;

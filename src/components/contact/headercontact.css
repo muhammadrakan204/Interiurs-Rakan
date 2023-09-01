@@ -9,6 +9,7 @@
     color: var(--text-color);
     font-weight: 300;
     margin-left: 2rem;
+    font-family: 'Raleway', sans-serif;
 }
 
 .tc1 {
@@ -35,7 +36,7 @@
 }
 
 .hero-contact .email-contact {
-    font-family: 'quicksand';
+    font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-size: 1.3rem;
     color: var(--text-color);
@@ -43,10 +44,11 @@
 }
 
 .hero-contact .email-contact-desc {
-    font-family: 'quicksand';
+    font-family: 'Raleway', sans-serif;
     font-weight: 300;
     font-size: 1rem;
     margin-bottom: 2rem;
+    margin-top: .2rem;
 }
 
 .fa-chevron-right {
