@@ -7,7 +7,7 @@
     align-items: center;
 }
 
-.body-cursor {
+/* .body-cursor {
     width: 18px;
     height: 18px;
     position: fixed;
@@ -35,7 +35,7 @@
     z-index: 99999;
     transition: width 1.5s, height 1.5s;
     animation: cursorAnim 5s infinite ease-in-out;
-}
+} */
 
 .login-wrapper {
     width: 60%;

@@ -21,7 +21,7 @@
     color: var(--text-color);
 }
 
-.body-cursor {
+/* .body-cursor {
     width: 18px;
     height: 18px;
     position: fixed;
@@ -49,7 +49,7 @@
     z-index: 99999;
     transition: width 1.5s, height 1.5s;
     animation: cursorAnim 5s infinite ease-in-out;
-}
+} */
 
 .container-signup .kiri-signup h1 {
     font-family: 'wanoMedium';

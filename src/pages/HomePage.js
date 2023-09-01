@@ -11,13 +11,12 @@ import Footer from "../components/home/Footer";
 import { useEffect } from "react";
 
 const HomePage = () => {
+  const x = window.matchMedia("(min-width: 820px)");
   useEffect(() => {
     if (x.matches) {
-      const x = window.matchMedia("(max-width: 820px)");
       const bCursor = document.querySelector(".body-cursor");
       const cCursor = document.querySelector(".child-cursor");
       const targetCursor = document.querySelectorAll(".target-cursor");
-
       document.addEventListener("mousemove", moveCursor);
 
       function moveCursor(e) {

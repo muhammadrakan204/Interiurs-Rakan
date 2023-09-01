@@ -75,13 +75,13 @@ span i {
 .body-cursor {
     width: 18px;
     height: 18px;
-    position: fixed;
+    position: absolute;
     background-color: var(--white-color);
     border-radius: 50%;
     mix-blend-mode: difference;
     pointer-events: none;
     transform: translate(-50%, -50%);
-    left: 10px;
+    left: -101%;
     z-index: 99999;
     transition: width 0.5s, height 0.5s;
 }
@@ -89,13 +89,13 @@ span i {
 .child-cursor {
     width: 9px;
     height: 9px;
-    position: fixed;
+    position: absolute;
     background-color: var(--white-color);
     border-radius: 50%;
     mix-blend-mode: difference;
     pointer-events: none;
     transform: translate(80%);
-    left: 10px;
+    left: -101%;
     top: 10px;
     z-index: 99999;
     transition: width 1.5s, height 1.5s;
